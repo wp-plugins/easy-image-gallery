@@ -1,0 +1,83 @@
+=== Easy Image Gallery ===
+Contributors: sumobi
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
+Tags: image gallery, image, galleries, simple, easy, sumobi
+Requires at least: 3.5
+Tested up to: 3.6
+Stable tag: 1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+Easily create an image gallery on your posts, pages or any custom post type
+
+== Description ==
+
+This plugin allows you to easily create an image gallery on any post, page or custom post type. Images are can be added and previewed from the metabox. Images can be re-ordered by drag and drop.
+
+1. Drag and drop re-ordering
+1. Lazy loading. Gallery is automatically added to the bottom of the page unless the shortcode is detected, in which case it honour that.
+1. Intuitive and familiar interface for adding and previewing images
+1. Add gallery to any post, page or custom post type
+1. CSS and JS are only loaded on pages when needed
+1. Images link to larger versions by default but can be turned off
+1. Fully Localized (translation ready) with .mo and .po files
+1. Add multiple images to gallery at once
+1. Uses the thumbnail size specified in Settings -> Media but any image size can be passed in
+1. Custom webfont for view icon
+1. Support for Fancybox and Pretty Photo (developers can easily add their preferred lightbox via hooks and filters)
+1. Uses the new WP 3.5+ media manager for a familiar and intuitive way to add your images
+1. WordPress 3.6 Ready
+
+= Usage = 
+
+Galleries are automatically appended to the bottom of your post/page unless you use the shortcode, which will give you finer control over placement within the content area.
+
+= Shortcode Usage =
+
+Use the following shortcode to display the gallery
+
+    [easy_image_gallery]
+
+= Template Tag Usage =
+
+The following template tag is available.
+    
+    if( function_exists( 'easy_image_gallery' ) ) {
+	    echo easy_image_gallery();
+    }
+
+If you use the template tag above, you will need remove the default content filter like so:
+
+    remove_filter( 'the_content', 'easy_image_gallery_append_to_content' );    
+
+= Developer Friendly =
+
+1. Modify the gallery HTML using filters
+1. Developed with WP Coding Standards
+1. Easily add your preferred lightbox script via hooks and filters
+1. Easily unhook CSS and add your own styling
+1. Pass in a different image size for the thumbnails via filter
+1. Minimalistic markup and styling
+
+**Stay up to date**
+
+*Become a fan on Facebook* 
+[http://www.facebook.com/sumobicom](http://www.facebook.com/sumobicom "Facebook")
+
+*Follow me on Twitter* 
+[http://twitter.com/sumobi_](http://twitter.com/sumobi_ "Twitter")
+
+== Installation ==
+
+1. Upload the entire `easy-image-gallery` folder to the `/wp-content/plugins/` directory, or just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
+1. Activate Easy Image Gallery from the 'Plugins' page in WordPress
+1. Configure the plugin's settings from plugins > Easy Image Gallery
+1. Create a gallery on any post or page from the added 'Image Gallery' metabox.
+
+== Screenshots ==
+
+
+== Changelog ==
+
+= 1.0 =
+* Initial release

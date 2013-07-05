@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Image Gallery\n"
-"POT-Creation-Date: 2013-06-28 11:28+1200\n"
-"PO-Revision-Date: 2013-06-28 11:28+1200\n"
+"POT-Creation-Date: 2013-07-05 20:00+1200\n"
+"PO-Revision-Date: 2013-07-05 20:00+1200\n"
 "Last-Translator: \n"
 "Language-Team: Sumobi <andrew@sumobi.com>\n"
 "MIME-Version: 1.0\n"
@@ -29,40 +29,36 @@ msgstr ""
 msgid "Post Types"
 msgstr ""
 
-#: ../includes/admin-page.php:77
+#: ../includes/admin-page.php:81
 #, php-format
 msgid "Please note: fancyBox requires a %s for commercial use"
 msgstr ""
 
-#: ../includes/admin-page.php:148
+#: ../includes/admin-page.php:156
 msgid "Settings"
 msgstr ""
 
-#: ../includes/metabox.php:17
+#: ../includes/metabox.php:19
 msgid "Image Gallery"
 msgstr ""
 
-#: ../includes/metabox.php:47 ../includes/metabox.php:133
+#: ../includes/metabox.php:48 ../includes/metabox.php:136
 msgid "Remove image"
 msgstr ""
 
-#: ../includes/metabox.php:47 ../includes/metabox.php:133
-msgid "Remove"
-msgstr ""
-
-#: ../includes/metabox.php:61
+#: ../includes/metabox.php:62
 msgid "Add gallery images"
 msgstr ""
 
-#: ../includes/metabox.php:76
+#: ../includes/metabox.php:77
 msgid "Link images to larger sizes"
 msgstr ""
 
-#: ../includes/metabox.php:110
+#: ../includes/metabox.php:111
 msgid "Add Images to Gallery"
 msgstr ""
 
-#: ../includes/metabox.php:112
+#: ../includes/metabox.php:113
 msgid "Add to gallery"
 msgstr ""
 

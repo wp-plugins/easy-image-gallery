@@ -319,7 +319,8 @@ function easy_image_gallery() {
 			$classes = array( 'popup' );
 
 			// get original image
-			$image_link = wp_get_attachment_url( $attachment_id );
+			$image_link	= wp_get_attachment_image_src( $attachment_id, apply_filters( 'linked_image_size', 'large' ) );
+			$image_link	= $image_link[0];	
 
 			$image = wp_get_attachment_image( $attachment_id, apply_filters( 'thumbnail_image_size', 'thumbnail' ), '', array( 'alt' => trim( strip_tags( get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ) ) ) ) );
 
@@ -336,7 +337,6 @@ function easy_image_gallery() {
 				$html = sprintf( '<li>%s</li>', $image );
 
 			echo apply_filters( 'easy_image_gallery_html', $html, $rel, $image_link, $image_class, $image_title, $image, $attachment_id, $post->ID );
-
 		}
 ?>
     </ul>

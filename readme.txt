@@ -4,13 +4,15 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Easily create an image gallery on your posts, pages or any custom post type
 
 == Description ==
+
+There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal to to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
 
 This plugin allows you to easily create an image gallery on any post, page or custom post type. Images are can be added and previewed from the metabox. Images can be re-ordered by drag and drop.
 
@@ -90,5 +92,18 @@ If you use the template tag above, you will need remove the default content filt
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Tweak: Images now link to the "large" image size by default, rather than the original image
+* Tweak: Removed "remove" links underneath each image and added a [-] on hover to be consistent with WordPress' media manager styling
+* New: linked_image_size filter for specifying which image size the thumbnails should link to
+* New: 2 new filters added for overriding the JS for prettyPhoto and fancyBox. easy_image_gallery_prettyphoto_js and easy_image_gallery_fancybox_js
+
 = 1.0 =
+
 * Initial release
+
+== Upgrade Notice ==
+
+= 1.0.1 =
+More consistent styling with WordPress' Media Manager

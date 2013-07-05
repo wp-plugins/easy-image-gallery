@@ -97,7 +97,7 @@ function easy_image_gallery_js() {
 
 			switch ( $lightbox ) {
 				
-				case 'prettyphoto': ?>
+				case 'prettyphoto': ob_start(); ?>
 					
 					<script>
 					  jQuery(document).ready(function() {
@@ -108,9 +108,14 @@ function easy_image_gallery_js() {
 					  });
 					</script>
 
+					<?php 
+						$js = ob_get_clean();
+						echo apply_filters( 'easy_image_gallery_prettyphoto_js', $js );
+					?>
+
 				<?php break;
 				
-				case 'fancybox': ?>
+				case 'fancybox': ob_start(); ?>
 
 					<script>
 						jQuery(document).ready(function() {
@@ -120,6 +125,11 @@ function easy_image_gallery_js() {
 							});
 						});
 					</script>
+
+					<?php 
+						$js = ob_get_clean();
+						echo apply_filters( 'easy_image_gallery_fancybox_js', $js );
+					?>
 
 				<?php break;
 
@@ -147,6 +157,32 @@ add_action( 'wp_footer', 'easy_image_gallery_js', 20 );
 function easy_image_gallery_admin_css() { ?>
 
 	<style>
+		.attachment.details .check div {
+			background-position: -60px 0;
+		}
+
+		.attachment.details .check:hover div {
+			background-position: -60px 0;
+		}
+
+		.gallery_images .details.attachment {
+			box-shadow: none;
+		}
+
+		.gallery_images .attachment.details > div {
+			width: 150px;
+			height: 150px;
+			box-shadow: none;
+		}
+
+		.gallery_images .attachment-preview .thumbnail {
+			 cursor: move;
+		}
+
+		.attachment.details div:hover .check {
+			display:block;
+		}
+
         .gallery_images:after,
         #gallery_images_container:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
 

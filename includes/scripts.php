@@ -37,8 +37,8 @@ function easy_image_gallery_scripts() {
 	if ( easy_image_gallery_is_gallery() )
 		wp_enqueue_style( 'easy-image-gallery' );
 
-	// only load the JS if gallery images are linked or the featured image is linked
-	if ( easy_image_gallery_has_linked_images() ) {
+	// only load the JS if there are gallery images, they are linked, and we're on a singular page
+	if ( easy_image_gallery_has_linked_images() && easy_image_gallery_is_gallery() && is_singular() ) {
 
 		$lightbox = easy_image_gallery_get_lightbox();
 

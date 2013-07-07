@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,7 +90,18 @@ If you use the template tag above, you will need remove the default content filt
 1. The front-end of the website showing the gallery which has been automatically appended to the content
 1. Clicking on an image launches the lightbox. Here it's shown with prettyPhoto
 
+== Frequently Asked Questions ==
+
+= How can I add another Lightbox script to the plugin? =
+
+[Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
+
+
 == Changelog ==
+
+= 1.0.2 =
+
+* Tweak: Improved loading of scripts
 
 = 1.0.1 =
 
@@ -104,6 +115,9 @@ If you use the template tag above, you will need remove the default content filt
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Improved loading of scripts
 
 = 1.0.1 =
 More consistent styling with WordPress' Media Manager

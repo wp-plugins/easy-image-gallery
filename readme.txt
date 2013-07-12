@@ -12,7 +12,7 @@ Easily create an image gallery on your posts, pages or any custom post type
 
 == Description ==
 
-There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal to to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
+There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal is to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
 
 This plugin allows you to easily create an image gallery on any post, page or custom post type. Images are can be added and previewed from the metabox. Images can be re-ordered by drag and drop.
 

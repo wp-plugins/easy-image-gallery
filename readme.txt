@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Easily create an image gallery on your posts, pages or any custom post type
 
 == Description ==
 
-There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal to to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
+There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal is to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
 
 This plugin allows you to easily create an image gallery on any post, page or custom post type. Images are can be added and previewed from the metabox. Images can be re-ordered by drag and drop.
 
@@ -99,6 +99,10 @@ If you use the template tag above, you will need remove the default content filt
 
 == Changelog ==
 
+= 1.0.3 =
+
+* Fix: jQuery script that calls light box was being loaded when there were no gallery images 
+
 = 1.0.2 =
 
 * Tweak: Improved loading of scripts
@@ -115,6 +119,9 @@ If you use the template tag above, you will need remove the default content filt
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+Fixes minor bug where JS was loaded onto page when there is no gallery
 
 = 1.0.2 =
 Improved loading of scripts

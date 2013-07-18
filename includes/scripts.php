@@ -15,6 +15,7 @@ function easy_image_gallery_scripts() {
 	if ( !isset( $post->ID ) )
 		return;
 
+
 	// JS
 	wp_register_script( 'pretty-photo', EASY_IMAGE_GALLERY_URL . 'includes/lib/prettyphoto/jquery.prettyPhoto.js', array( 'jquery' ), EASY_IMAGE_GALLERY_VERSION, true );
 	wp_register_script( 'fancybox', EASY_IMAGE_GALLERY_URL . 'includes/lib/fancybox/jquery.fancybox.pack.js', array( 'jquery' ), EASY_IMAGE_GALLERY_VERSION, true );
@@ -37,8 +38,10 @@ function easy_image_gallery_scripts() {
 	if ( easy_image_gallery_is_gallery() )
 		wp_enqueue_style( 'easy-image-gallery' );
 
-	// only load the JS if there are gallery images, they are linked, and we're on a singular page
-	if ( easy_image_gallery_has_linked_images() && easy_image_gallery_is_gallery() && is_singular() ) {
+	$linked_images = easy_image_gallery_has_linked_images();
+
+	// only load the JS if gallery images are linked or the featured image is linked
+	if ( $linked_images ) {
 
 		$lightbox = easy_image_gallery_get_lightbox();
 
@@ -79,6 +82,8 @@ function easy_image_gallery_scripts() {
 add_action( 'wp_enqueue_scripts', 'easy_image_gallery_scripts', 20 );
 
 
+
+
 /**
  * JS
  *
@@ -86,7 +91,7 @@ add_action( 'wp_enqueue_scripts', 'easy_image_gallery_scripts', 20 );
  */
 function easy_image_gallery_js() {
 
-	if ( ! easy_image_gallery_allowed_post_type() )
+	if ( ! easy_image_gallery_allowed_post_type() || ! easy_image_gallery_is_gallery() )
 		return;
 
 	if ( is_singular() && easy_image_gallery_has_linked_images() ) : ?>

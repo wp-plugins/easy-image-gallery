@@ -157,7 +157,7 @@ function easy_image_gallery_metabox() {
                 forceHelperSize: false,
                 helper: 'clone',
                 opacity: 0.65,
-                placeholder: 'wc-metabox-sortable-placeholder',
+                placeholder: 'eig-metabox-sortable-placeholder',
                 start:function(event,ui){
                     ui.item.css('background-color','#f6f6f6');
                 },

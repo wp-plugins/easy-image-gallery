@@ -282,7 +282,6 @@ function easy_image_gallery() {
 	if ( $attachment_ids ) { ?>
 
     <?php
-		global $post;
 
 		$has_gallery_images = get_post_meta( get_the_ID(), '_easy_image_gallery', true );
 
@@ -324,7 +323,8 @@ function easy_image_gallery() {
 
 			$image = wp_get_attachment_image( $attachment_id, apply_filters( 'thumbnail_image_size', 'thumbnail' ), '', array( 'alt' => trim( strip_tags( get_post_meta( $attachment_id, '_wp_attachment_image_alt', true ) ) ) ) );
 
-			$image_title = esc_attr( get_the_title( $attachment_id ) );
+			$image_caption = get_post( $attachment_id )->post_excerpt ? get_post( $attachment_id )->post_excerpt : '';
+
 			$image_class = esc_attr( implode( ' ', $classes ) );
 
 			$lightbox = easy_image_gallery_get_lightbox();
@@ -332,11 +332,11 @@ function easy_image_gallery() {
 			$rel = easy_image_gallery_count_images() > 1 ? 'rel="'. $lightbox .'[group]"' : 'rel="'. $lightbox .'"';
 
 			if ( easy_image_gallery_has_linked_images() )
-				$html = sprintf( '<li><a %s href="%s" class="%s" title="%s"><i class="icon-view"></i><span class="overlay"></span>%s</a></li>', $rel, $image_link, $image_class, $image_title, $image );
+				$html = sprintf( '<li><a %s href="%s" class="%s" title="%s"><i class="icon-view"></i><span class="overlay"></span>%s</a></li>', $rel, $image_link, $image_class, $image_caption, $image );
 			else
 				$html = sprintf( '<li>%s</li>', $image );
 
-			echo apply_filters( 'easy_image_gallery_html', $html, $rel, $image_link, $image_class, $image_title, $image, $attachment_id, $post->ID );
+			echo apply_filters( 'easy_image_gallery_html', $html, $rel, $image_link, $image_class, $image_caption, $image, $attachment_id, $post->ID );
 		}
 ?>
     </ul>

@@ -174,6 +174,10 @@ function easy_image_gallery_admin_css() { ?>
 			box-shadow: none;
 		}
 
+		.eig-metabox-sortable-placeholder {
+			background: #DFDFDF;
+		}
+
 		.gallery_images .attachment.details > div {
 			width: 150px;
 			height: 150px;

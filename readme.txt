@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,11 @@ If you use the template tag above, you will need remove the default content filt
 
 == Changelog ==
 
+= 1.0.4 =
+
+* Fix: Images now use the image's caption rather than title field
+* New: Styling for image placeholder as images are being dragged
+
 = 1.0.3 =
 
 * Fix: jQuery script that calls light box was being loaded when there were no gallery images 
@@ -119,6 +124,9 @@ If you use the template tag above, you will need remove the default content filt
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.4 =
+Images now use the image's caption rather than title field
 
 = 1.0.3 =
 Fixes minor bug where JS was loaded onto page when there is no gallery

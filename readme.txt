@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +24,7 @@ Features:
 1. Fully Localized (translation ready) with .mo and .po files
 1. Add multiple images to the gallery at once
 1. Uses the thumbnail size specified in Settings -> Media
-1. Custom webfont icon for hover effect
+1. Custom web font icon for hover effect
 1. Support for fancyBox and prettyPhoto (developers can easily add their preferred lightbox via hooks and filters)
 1. Uses the new WP 3.5+ media manager for a familiar and intuitive way to add your images
 1. WordPress 3.6 Ready

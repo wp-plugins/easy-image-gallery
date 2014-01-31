@@ -4,13 +4,15 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Easily create an image gallery on your posts, pages or any custom post type
 
 == Description ==
+
+There comes a time when you need more flexibility than the standard WP gallery offers, That's when this plugin steps in. This plugin's goal is to make it easy to create a gallery and place it wherever you need. A perfect example would be to create a product gallery for an ecommerce website and then have the flexibility to position it where you wanted to match your theme's design.
 
 This plugin allows you to easily create an image gallery on any post, page or custom post type. Images are can be added and previewed from the metabox. Images can be re-ordered by drag and drop.
 
@@ -24,14 +26,14 @@ Features:
 1. Fully Localized (translation ready) with .mo and .po files
 1. Add multiple images to the gallery at once
 1. Uses the thumbnail size specified in Settings -> Media
-1. Custom web font icon for hover effect
+1. Custom webfont icon for hover effect
 1. Support for fancyBox and prettyPhoto (developers can easily add their preferred lightbox via hooks and filters)
 1. Uses the new WP 3.5+ media manager for a familiar and intuitive way to add your images
 1. WordPress 3.6 Ready
 
 = Usage = 
 
-Galleries are automatically appended to the bottom of your post/page unless you use the shortcode below. Using the shortcode will give you finer control over placement within the content area.
+Galleries are automatically appended to the bottom of your post/page unless you use the shortcode below. Using the shortcode will give you finer control over placement within the content area. Plugin settings are located under Settings -> Media
 
 = Note =
 
@@ -88,7 +90,63 @@ If you use the template tag above, you will need remove the default content filt
 1. The front-end of the website showing the gallery which has been automatically appended to the content
 1. Clicking on an image launches the lightbox. Here it's shown with prettyPhoto
 
+== Frequently Asked Questions ==
+
+= Where are the plugin's settings? =
+
+In your WordPress admin under Settings -> Media
+
+= How can I add another Lightbox script to the plugin? =
+
+[Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
+
+== Upgrade Notice ==
+
+= 1.1.5 =
+Plugin settings now located under Settings -> Media, plus some minor tweaks to filter names
+
 == Changelog ==
 
+= 1.0.5 =
+
+* Tweak: The plugin's options page has been moved to settings -> media
+* Tweak: Renamed the 'thumbnail_image_size' filter name to be 'easy_image_gallery_thumbnail_image_size' so it's unique to the plugin 
+* Tweak: Renamed the 'linked_image_size' filter name to be 'easy_image_gallery_linked_image_size' so it's unique to the plugin 
+
+= 1.0.4 =
+
+* Fix: Images now use the image's caption rather than title field
+* New: Styling for image placeholder as images are being dragged
+
+= 1.0.3 =
+
+* Fix: jQuery script that calls light box was being loaded when there were no gallery images 
+
+= 1.0.2 =
+
+* Tweak: Improved loading of scripts
+
+= 1.0.1 =
+
+* Tweak: Images now link to the "large" image size by default, rather than the original image
+* Tweak: Removed "remove" links underneath each image and added a [-] on hover to be consistent with WordPress' media manager styling
+* New: linked_image_size filter for specifying which image size the thumbnails should link to
+* New: 2 new filters added for overriding the JS for prettyPhoto and fancyBox. easy_image_gallery_prettyphoto_js and easy_image_gallery_fancybox_js
+
 = 1.0 =
+
 * Initial release
+
+== Upgrade Notice ==
+
+= 1.0.4 =
+Images now use the image's caption rather than title field
+
+= 1.0.3 =
+Fixes minor bug where JS was loaded onto page when there is no gallery
+
+= 1.0.2 =
+Improved loading of scripts
+
+= 1.0.1 =
+More consistent styling with WordPress' Media Manager

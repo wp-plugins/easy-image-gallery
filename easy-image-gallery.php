@@ -3,7 +3,7 @@
 Plugin Name: Easy Image Gallery
 Plugin URI: http://sumobi.com/shop/easy-image-gallery/
 Description: An easy to use image gallery with drag & drop re-ordering
-Version: 1.0.4
+Version: 1.0.5
 Author: Andrew Munro, Sumobi
 Author URI: http://sumobi.com
 License: GPL-2.0+
@@ -54,13 +54,12 @@ if ( !class_exists( 'Easy_Image_Gallery' ) ) {
 			    define( 'EASY_IMAGE_GALLERY_URL', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 
 			if ( ! defined( 'EASY_IMAGE_GALLERY_VERSION' ) )
-			    define( 'EASY_IMAGE_GALLERY_VERSION', '1.0.4' );
+			    define( 'EASY_IMAGE_GALLERY_VERSION', '1.0.5' );
 
 			if ( ! defined( 'EASY_IMAGE_GALLERY_INCLUDES' ) )
 			    define( 'EASY_IMAGE_GALLERY_INCLUDES', EASY_IMAGE_GALLERY_DIR . trailingslashit( 'includes' ) );
 
 		}
-
 
 		/**
 		* Loads the initial files needed by the plugin.
@@ -75,8 +74,6 @@ if ( !class_exists( 'Easy_Image_Gallery' ) ) {
 			require_once( EASY_IMAGE_GALLERY_INCLUDES . 'admin-page.php' );
 			
 		}
-
-		
 
 	}
 }

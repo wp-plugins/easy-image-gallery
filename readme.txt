@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ Features:
 
 = Usage = 
 
-Galleries are automatically appended to the bottom of your post/page unless you use the shortcode below. Using the shortcode will give you finer control over placement within the content area.
+Galleries are automatically appended to the bottom of your post/page unless you use the shortcode below. Using the shortcode will give you finer control over placement within the content area. Plugin settings are located under Settings -> Media
 
 = Note =
 
@@ -92,12 +92,26 @@ If you use the template tag above, you will need remove the default content filt
 
 == Frequently Asked Questions ==
 
+= Where are the plugin's settings? =
+
+In your WordPress admin under Settings -> Media
+
 = How can I add another Lightbox script to the plugin? =
 
 [Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
 
+== Upgrade Notice ==
+
+= 1.1.5 =
+Plugin settings now located under Settings -> Media, plus some minor tweaks to filter names
 
 == Changelog ==
+
+= 1.0.5 =
+
+* Tweak: The plugin's options page has been moved to settings -> media
+* Tweak: Renamed the 'thumbnail_image_size' filter name to be 'easy_image_gallery_thumbnail_image_size' so it's unique to the plugin 
+* Tweak: Renamed the 'linked_image_size' filter name to be 'easy_image_gallery_linked_image_size' so it's unique to the plugin 
 
 = 1.0.4 =
 

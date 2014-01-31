@@ -1,57 +1,21 @@
 <?php
 /**
- * Admin options
- *
- * @since 1.0
- */
-function easy_image_gallery_menu() {
-	add_plugins_page( __( 'Easy Image Gallery', 'easy-image-gallery' ), __( 'Easy Image Gallery', 'easy-image-gallery' ), 'manage_options', 'easy-image-gallery', 'easy_image_gallery_admin_page' );
-}
-add_action( 'admin_menu', 'easy_image_gallery_menu' );
-
-
-/**
- * Admin page
- *
- * @since 1.0
- */
-
-function easy_image_gallery_admin_page() { ?>
-    <div class="wrap">
-    	 <?php screen_icon( 'plugins' ); ?>
-        <h2><?php _e( 'Easy Image Gallery', 'easy-image-gallery' ); ?></h2>
-
-        <form action="options.php" method="POST">
-
-        	<?php settings_errors(); ?>
-
-            <?php settings_fields( 'my-settings-group' ); ?>
-
-            <?php do_settings_sections( 'easy-image-gallery-settings' ); ?>
-
-            <?php submit_button(); ?>
-        </form>
-
-    </div>
-<?php
-}
-
-
-/**
  * Admin init
  *
  * @since 1.0
  */
 function easy_image_gallery_admin_init() {
 
-	register_setting( 'my-settings-group', 'easy-image-gallery', 'easy_image_gallery_settings_sanitize' );
+
+	register_setting( 'media', 'easy-image-gallery', 'easy_image_gallery_settings_sanitize' );
 
 	// sections
 	add_settings_section( 'general', __( 'General', 'easy-image-gallery' ), '', 'easy-image-gallery-settings' );
 
 	// settings
-	add_settings_field( 'lightbox', __( 'Lightbox', 'easy-image-gallery' ), 'lightbox_callback', 'easy-image-gallery-settings', 'general' );
-	add_settings_field( 'post-types', __( 'Post Types', 'easy-image-gallery' ), 'post_types_callback', 'easy-image-gallery-settings', 'general' );
+	add_settings_field( 'header', '<h3 class="title">' . __( 'Easy Image Gallery', 'easy-image-gallery' ) . '</h3>', '', 'media', 'default' );
+	add_settings_field( 'lightbox', __( 'Lightbox', 'easy-image-gallery' ), 'lightbox_callback', 'media', 'default' );
+	add_settings_field( 'post-types', __( 'Post Types', 'easy-image-gallery' ), 'post_types_callback', 'media', 'default' );
 
 }
 add_action( 'admin_init', 'easy_image_gallery_admin_init' );
@@ -113,7 +77,6 @@ function post_types_callback() {
 
 }
 
-
 /**
  * Sanitization
  *
@@ -141,10 +104,9 @@ function easy_image_gallery_settings_sanitize( $input ) {
 	
 
 
-	return apply_filters( 'sandbox_theme_validate_input_examples', $output, $input );
+	return apply_filters( 'easy_image_gallery_settings_sanitize', $output, $input );
 
 }
-
 
 /**
  * Action Links

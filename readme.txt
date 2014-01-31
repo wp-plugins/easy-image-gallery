@@ -100,6 +100,10 @@ In your WordPress admin under Settings -> Media
 
 [Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
 
+= How can I use a different thumbnail size for each post type? =
+
+[Read This](http://sumobi.com/different-thumbnail-sizes-for-each-post-type-with-easy-image-gallery/ "Different thumbnail sizes for each post type with Easy Image Gallery")
+
 == Upgrade Notice ==
 
 = 1.1.5 =

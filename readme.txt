@@ -3,8 +3,8 @@ Contributors: sumobi
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 1.0.5
+Tested up to: 3.9 alpha
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,7 +78,7 @@ If you use the template tag above, you will need remove the default content filt
 
 1. Upload the entire `easy-image-gallery` folder to the `/wp-content/plugins/` directory, or just upload the ZIP package via 'Plugins > Add New > Upload' in your WP Admin
 1. Activate Easy Image Gallery from the 'Plugins' page in WordPress
-1. Configure the plugin's settings from plugins > Easy Image Gallery
+1. Configure the plugin's settings from Settings -> Media
 1. Create a gallery on any post or page from the added 'Image Gallery' metabox.
 
 == Screenshots ==
@@ -100,12 +100,21 @@ In your WordPress admin under Settings -> Media
 
 [Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
 
+= How can I use a different thumbnail size for each post type? =
+
+[Read This](http://sumobi.com/different-thumbnail-sizes-for-each-post-type-with-easy-image-gallery/ "Different thumbnail sizes for each post type with Easy Image Gallery")
+
 == Upgrade Notice ==
 
-= 1.1.5 =
-Plugin settings now located under Settings -> Media, plus some minor tweaks to filter names
+= 1.0.6 =
+Fixes settings link on plugins page
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix: Settings link on plugins page
+* Fix PHP notice on Settings -> Media page
+* Tweak: removed unneeded function
 
 = 1.0.5 =
 

@@ -5,28 +5,27 @@
  * @since 1.0
  */
 function easy_image_gallery_admin_init() {
-
-
 	register_setting( 'media', 'easy-image-gallery', 'easy_image_gallery_settings_sanitize' );
 
-	// sections
-	add_settings_section( 'general', __( 'General', 'easy-image-gallery' ), '', 'easy-image-gallery-settings' );
-
 	// settings
-	add_settings_field( 'header', '<h3 class="title">' . __( 'Easy Image Gallery', 'easy-image-gallery' ) . '</h3>', '', 'media', 'default' );
-	add_settings_field( 'lightbox', __( 'Lightbox', 'easy-image-gallery' ), 'lightbox_callback', 'media', 'default' );
-	add_settings_field( 'post-types', __( 'Post Types', 'easy-image-gallery' ), 'post_types_callback', 'media', 'default' );
-
+	add_settings_field( 'header', '<h3 class="title">' . __( 'Easy Image Gallery', 'easy-image-gallery' ) . '</h3>', 'easy_image_gallery_header_callback', 'media', 'default' );
+	add_settings_field( 'lightbox', __( 'Lightbox', 'easy-image-gallery' ), 'easy_image_gallery_lightbox_callback', 'media', 'default' );
+	add_settings_field( 'post-types', __( 'Post Types', 'easy-image-gallery' ), 'easy_image_gallery_post_types_callback', 'media', 'default' );
 }
 add_action( 'admin_init', 'easy_image_gallery_admin_init' );
 
+/**
+ * Blank header callback
+ * @since 1.0.6
+ */
+function easy_image_gallery_header_callback() {}
 
 /**
  * Lightbox callback
  *
  * @since 1.0
  */
-function lightbox_callback() {
+function easy_image_gallery_lightbox_callback() {
 
 	// default option when settings have not been saved
 	$defaults['lightbox'] = 'prettyphoto';
@@ -55,7 +54,7 @@ function lightbox_callback() {
  * @since 1.0
  */
 
-function post_types_callback() {
+function easy_image_gallery_post_types_callback() {
 
 	// post and page defaults
 	$defaults['post_types']['post'] = 'on';
@@ -115,7 +114,7 @@ function easy_image_gallery_settings_sanitize( $input ) {
  */
 function easy_image_gallery_plugin_action_links( $links ) {
 
-	$settings_link = '<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/plugins.php?page=easy-image-gallery">'. __( 'Settings', 'easy-image-gallery' ) .'</a>';
+	$settings_link = '<a href="' . admin_url( 'options-media.php' ) . '">'. __( 'Settings', 'easy-image-gallery' ) .'</a>';
 	array_unshift( $links, $settings_link );
 
 	return $links;

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.9 alpha
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,10 +106,15 @@ In your WordPress admin under Settings -> Media
 
 == Upgrade Notice ==
 
-= 1.1.5 =
-Plugin settings now located under Settings -> Media, plus some minor tweaks to filter names
+= 1.0.6 =
+Fixes settings link on plugins page
 
 == Changelog ==
+
+= 1.0.6 =
+* Fix: Settings link on plugins page
+* Fix PHP notice on Settings -> Media page
+* Tweak: removed unneeded function
 
 = 1.0.5 =
 

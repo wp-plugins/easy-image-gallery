@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.9 alpha
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -106,10 +106,13 @@ In your WordPress admin under Settings -> Media
 
 == Upgrade Notice ==
 
-= 1.1 =
+= 1.1.1 =
 Easy Image Gallery is no longer bundled with fancyBox 2 as non GPL software is not allowed on the WP repo. If you have a license of fancyBox 2, simply install the free Easy Image Gallery Extend plugin here: http://sumobi.com/shop/easy-image-gallery-extend/ and it will be added to the plugin's settings again.
 
 == Changelog ==
+
+= 1.1.1 =
+* Fix: Missing slash on path to CSS file when plugin's CSS is overridden from a child theme
 
 = 1.1 =
 * Tweak: fancybox 2 has been replaced with fancybox 1, as non GPL software is not allowed on the WP repo (fancyBox 2 is license under Creative Commons). If you'd like to add fancyBox 2 back into the plugin, download and activate this small plugin. http://sumobi.com/shop/easy-image-gallery-extend/ After activation, you'll find an option in the plugin's settings to switch the lightbox to fancyBox 2.
@@ -148,17 +151,3 @@ Easy Image Gallery is no longer bundled with fancyBox 2 as non GPL software is n
 = 1.0 =
 
 * Initial release
-
-== Upgrade Notice ==
-
-= 1.0.4 =
-Images now use the image's caption rather than title field
-
-= 1.0.3 =
-Fixes minor bug where JS was loaded onto page when there is no gallery
-
-= 1.0.2 =
-Improved loading of scripts
-
-= 1.0.1 =
-More consistent styling with WordPress' Media Manager

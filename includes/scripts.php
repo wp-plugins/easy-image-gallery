@@ -26,7 +26,7 @@ function easy_image_gallery_scripts() {
 
 	// create a new 'css/easy-image-gallery.css' in your child theme to override CSS file completely
 	if ( file_exists( get_stylesheet_directory() . '/css/easy-image-gallery.css' ) )
-		wp_register_style( 'easy-image-gallery', get_stylesheet_directory_uri() . 'css/easy-image-gallery.css', '', EASY_IMAGE_GALLERY_VERSION, 'screen' );
+		wp_register_style( 'easy-image-gallery', get_stylesheet_directory_uri() . '/css/easy-image-gallery.css', '', EASY_IMAGE_GALLERY_VERSION, 'screen' );
 	else
 		wp_register_style( 'easy-image-gallery', EASY_IMAGE_GALLERY_URL . 'includes/css/easy-image-gallery.css', '', EASY_IMAGE_GALLERY_VERSION, 'screen' );
 

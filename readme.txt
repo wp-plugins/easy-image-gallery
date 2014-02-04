@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: image gallery, image, galleries, simple, easy, sumobi
 Requires at least: 3.5
 Tested up to: 3.9 alpha
-Stable tag: 1.0.6
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,17 +27,13 @@ Features:
 1. Add multiple images to the gallery at once
 1. Uses the thumbnail size specified in Settings -> Media
 1. Custom webfont icon for hover effect
-1. Support for fancyBox and prettyPhoto (developers can easily add their preferred lightbox via hooks and filters)
+1. Support for fancyBox and prettyPhoto (developers can easily add their preferred lightbox via hooks and filters, or [download this free plugin](http://sumobi.com/shop/easy-image-gallery-extend/ "Extend Easy Image Gallery with additional lightboxes")
 1. Uses the new WP 3.5+ media manager for a familiar and intuitive way to add your images
 1. WordPress 3.6 Ready
 
 = Usage = 
 
 Galleries are automatically appended to the bottom of your post/page unless you use the shortcode below. Using the shortcode will give you finer control over placement within the content area. Plugin settings are located under Settings -> Media
-
-= Note =
-
-fancyBox requires a [license for commercial use](http://fancyapps.com/fancybox/#license "fancyBox"). It's free to use for personal websites however.
 
 = Shortcode Usage =
 
@@ -92,13 +88,17 @@ If you use the template tag above, you will need remove the default content filt
 
 == Frequently Asked Questions ==
 
+= fancyBox looks different after upgrading to 1.1 =
+
+This plugin mistakenly had fancyBox 2 included. Non-GPL software is not allowed on the WordPress repo (fancyBox 2 is licensed under Creative Commons). It has now been replaced with fancyBox 1, which is GPL compatible. If you'd like to add fancyBox 2 back into the plugin, simply [download this free plugin](http://sumobi.com/shop/easy-image-gallery-extend/ "Extend Easy Image Gallery with additional lightboxes")
+
 = Where are the plugin's settings? =
 
 In your WordPress admin under Settings -> Media
 
 = How can I add another Lightbox script to the plugin? =
 
-[Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery")
+[Read This](http://sumobi.com/how-to-add-any-lightbox-script-to-the-easy-image-gallery-plugin "How to add another lightbox script to Easy Image Gallery") or [download this free plugin](http://sumobi.com/shop/easy-image-gallery-extend/ "Extend Easy Image Gallery with additional lightboxes") to add Colorbox and fancyBox 2
 
 = How can I use a different thumbnail size for each post type? =
 
@@ -106,10 +106,13 @@ In your WordPress admin under Settings -> Media
 
 == Upgrade Notice ==
 
-= 1.0.6 =
-Fixes settings link on plugins page
+= 1.1 =
+Easy Image Gallery is no longer bundled with fancyBox 2 as non GPL software is not allowed on the WP repo. If you have a license of fancyBox 2, simply install the free Easy Image Gallery Extend plugin here: http://sumobi.com/shop/easy-image-gallery-extend/ and it will be added to the plugin's settings again.
 
 == Changelog ==
+
+= 1.1 =
+* Tweak: fancybox 2 has been replaced with fancybox 1, as non GPL software is not allowed on the WP repo (fancyBox 2 is license under Creative Commons). If you'd like to add fancyBox 2 back into the plugin, download and activate this small plugin. http://sumobi.com/shop/easy-image-gallery-extend/ After activation, you'll find an option in the plugin's settings to switch the lightbox to fancyBox 2.
 
 = 1.0.6 =
 * Fix: Settings link on plugins page

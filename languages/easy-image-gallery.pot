@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Image Gallery\n"
-"POT-Creation-Date: 2014-01-31 14:44+1200\n"
-"PO-Revision-Date: 2014-01-31 14:44+1200\n"
+"POT-Creation-Date: 2014-02-04 14:28+1200\n"
+"PO-Revision-Date: 2014-02-04 14:28+1200\n"
 "Last-Translator: \n"
 "Language-Team: Sumobi <andrew@sumobi.com>\n"
 "Language: en_US\n"
@@ -15,28 +15,19 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../includes/admin-page.php:13
-msgid "General"
-msgstr ""
-
-#: ../includes/admin-page.php:16
+#: ../includes/admin-page.php:11
 msgid "Easy Image Gallery"
 msgstr ""
 
-#: ../includes/admin-page.php:17
+#: ../includes/admin-page.php:12
 msgid "Lightbox"
 msgstr ""
 
-#: ../includes/admin-page.php:18
+#: ../includes/admin-page.php:13
 msgid "Post Types"
 msgstr ""
 
-#: ../includes/admin-page.php:45
-#, php-format
-msgid "Please note: fancyBox requires a %s for commercial use"
-msgstr ""
-
-#: ../includes/admin-page.php:118
+#: ../includes/admin-page.php:113
 msgid "Settings"
 msgstr ""
 

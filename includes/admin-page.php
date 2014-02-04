@@ -40,10 +40,6 @@ function easy_image_gallery_lightbox_callback() {
 		<?php } ?>
 	</select>
 
-	<?php if ( 'fancybox' == $lightbox ) : ?>
-	<p class="description"><?php printf( __( 'Please note: fancyBox requires a %s for commercial use', 'easy-image-gallery' ), '<a title="fancyBox" href="http://fancyapps.com/fancybox/#license" target="_blank">license</a>' ); ?></p>
-	<?php endif; ?>
-
 	<?php
 
 }

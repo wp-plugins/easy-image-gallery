@@ -151,17 +151,3 @@ Easy Image Gallery is no longer bundled with fancyBox 2 as non GPL software is n
 = 1.0 =
 
 * Initial release
-
-== Upgrade Notice ==
-
-= 1.0.4 =
-Images now use the image's caption rather than title field
-
-= 1.0.3 =
-Fixes minor bug where JS was loaded onto page when there is no gallery
-
-= 1.0.2 =
-Improved loading of scripts
-
-= 1.0.1 =
-More consistent styling with WordPress' Media Manager
